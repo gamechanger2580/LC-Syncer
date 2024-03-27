@@ -57,12 +57,12 @@ public:
         // by simple recur
         // return solveRecur(nums,target);
 
-        // // by memo
-        // vector<unsigned long long int> dp(target+1,-1);
-        // return solveMemo(nums,target,dp);
+        // by memo
+        vector<unsigned long long int> dp(target+1,-1);
+        return solveMemo(nums,target,dp);
 
-        //by tab
-        return solveTab(nums,target);
+        // //by tab
+        // return solveTab(nums,target);
 
     }
 };
